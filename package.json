@@ -1,0 +1,47 @@
+{
+	"name": "autolessc",
+	"displayName": "autolessc",
+	"description": "Some automization for lessc in VSCode.",
+	"version": "0.0.1",
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/Kiruse/vsc-autolessc.git"
+	},
+	"license": "GPL-3.0",
+	"engines": {
+		"vscode": "^1.31.0"
+	},
+	"categories": [
+		"Other"
+	],
+	"activationEvents": [
+		"*"
+	],
+	"main": "./extension.js",
+	"contributes": {
+		"commands": [
+			{
+				"command": "extension.autolessc.updateLess",
+				"title": "autolessc: update less"
+			},
+			{
+				"command": "extension.autolessc.compileAll",
+				"title": "autolessc: compile all"
+			}
+		]
+	},
+	"scripts": {
+		"postinstall": "node ./node_modules/vscode/bin/install",
+		"test": "node ./node_modules/vscode/bin/test"
+	},
+	"devDependencies": {
+		"typescript": "^3.3.1",
+		"vscode": "^1.1.28",
+		"eslint": "^5.13.0",
+		"@types/node": "^10.12.21",
+		"@types/mocha": "^2.2.42"
+	},
+	"dependencies": {
+		"mz": "^2.7.0"
+	}
+}
