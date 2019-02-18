@@ -8,6 +8,8 @@ manually. Meh.
 
 ## Features
 
+Currently only supports locally mounted file systems.
+
 * Manage less version globally through npm
 * Compile LESS on save with all options of lessc
 * More to come as I find the time and need to develop them!
