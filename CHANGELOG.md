@@ -9,5 +9,9 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - Add finer configurations
 - Add CSS minifier
 
+## 0.0.2
+
+- Fixed a bug that prevented autolessc from compiling less files in a workspace with open folders
+
 ## 0.0.1
 - Initial release

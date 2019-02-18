@@ -12,8 +12,8 @@ module.exports = Object.defineProperties({}, {
             if (!value) {
                 if (vscode.workspace.workspaceFolders) {
                     return vscode.workspace.workspaceFolders
-                        .filter(folder => /^file:\/\//.text(folder.uri))
-                        .map(folder => folder.uri.substr('file://'.length + 1));
+                        .filter(folder => folder.uri.scheme === 'file')
+                        .map(folder => folder.uri.path);
                 }
                 else {
                     return [];

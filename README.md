@@ -31,6 +31,10 @@ This extension contributes the following settings:
 
 ## Release Notes
 
+### 0.0.2
+
+- Fixed a bug that prevented proper use in a workspace with opened folders.
+
 ### 0.0.1
 
-Initial release, provides most basic functionality.
+- Initial release, provides most basic functionality.

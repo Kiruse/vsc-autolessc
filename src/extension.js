@@ -39,7 +39,7 @@ exports.activate = async function(ctx) {
 	
 	initIndicator.hide().dispose();
 }
-	
+
 exports.deactivate = function() {
 	
 }
@@ -107,7 +107,7 @@ async function onSave(doc) {
 	const file = doc.fileName;
 	if (!isValidFile(file)) return;
 	
-	let [err, stdout, stderr] = await graceful(compile(file));
+	let [err,, stderr] = await graceful(compile(file));
 	
 	if (err || stderr.length) {
 		vscode.window.showErrorMessage(`Failed to compile ${file}`);
@@ -177,7 +177,7 @@ function isValidFile(file) {
 		return true;
 	}
 	
-	for (let root of config.root) {
+	for (let root of roots) {
 		let relativePath = path.posix.normalize(path.relative(file, root));
 		if (!relativePath.startsWith('../')) {
 			return true;
