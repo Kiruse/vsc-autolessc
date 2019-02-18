@@ -2,6 +2,7 @@
 	"name": "autolessc",
 	"displayName": "autolessc",
 	"description": "Some automization for lessc in VSCode.",
+	"publisher": "NeuroKiruse",
 	"version": "0.0.1",
 	"repository": {
 		"type": "git",
