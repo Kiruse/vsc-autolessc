@@ -31,7 +31,7 @@ This extension contributes the following settings:
 
 ## Release Notes
 
-### 0.0.2
+### 0.0.3
 
 - Fixed a bug that prevented proper use in a workspace with opened folders.
 
